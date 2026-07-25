@@ -481,7 +481,22 @@ console.log(
 `✨ Project Starlight Particles Loaded ✨`
 );
 
+window.addEventListener("load", () => {
 
+    for(let i=0;i<6;i++){
+
+        setTimeout(()=>{
+
+            createFirework(
+                Math.random()*window.innerWidth,
+                Math.random()*window.innerHeight*0.45
+            );
+
+        },i*600);
+
+    }
+
+});
 
 /*===========================================================
     END OF PARTICLES.JS
