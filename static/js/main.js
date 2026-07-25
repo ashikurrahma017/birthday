@@ -42,6 +42,8 @@ const giftBox = document.getElementById("giftBox");
 
 const giftMessage = document.getElementById("giftMessage");
 
+const readLetterBtn = document.getElementById("readLetterBtn");
+
 const beginJourney = document.getElementById("beginJourney");
 
 const revealItems = document.querySelectorAll(
@@ -202,9 +204,29 @@ beginJourney.addEventListener("click", () => {
 
     about.scrollIntoView({
 
-        behavior: "smooth",
+        behavior:"smooth"
 
-        block: "start"
+    });
+
+    setTimeout(()=>{
+
+        readLetterBtn.classList.add("show");
+
+    },2500);
+
+});
+
+readLetterBtn.addEventListener("click",()=>{
+
+    const letter=document.getElementById("letter");
+
+    letter.classList.add("show");
+
+    letter.scrollIntoView({
+
+        behavior:"smooth",
+
+        block:"start"
 
     });
 
