@@ -1011,6 +1011,13 @@ nav:hover{
     transform:scale(1.05) rotate(-2deg);
 
 }
+#envelope.opened{
+
+    transform:scale(.95) rotateX(15deg);
+
+    opacity:.85;
+
+}
 
 .envelope-front{
 
@@ -1042,20 +1049,29 @@ nav:hover{
 #letter-paper{
 
     width:100%;
-
     max-width:760px;
-
     background:#fffdf8;
-
     color:#222;
-
     padding:50px;
-
     border-radius:20px;
 
     display:none;
 
+    opacity:0;
+    transform:translateY(40px) scale(.95);
+
     box-shadow:0 25px 60px rgba(0,0,0,.35);
+
+    transition:.6s ease;
+}
+
+#letter-paper.show{
+
+    display:block;
+
+    opacity:1;
+
+    transform:translateY(0) scale(1);
 
 }
 
