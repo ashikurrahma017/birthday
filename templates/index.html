@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ========================= -->
+    <!-- Basic Meta -->
+    <!-- ========================= -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Project Starlight ✨</title>
+
+    <meta name="description"
+          content="A magical birthday surprise made with love.">
+
+    <meta name="theme-color"
+          content="#09061b">
+
+    <link rel="icon"
+          href="{{ url_for('static', filename='icons/favicon.ico') }}">
+
+
+    <!-- ========================= -->
+    <!-- Google Fonts -->
+    <!-- ========================= -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Great+Vibes&family=Playfair+Display:wght@500;700&display=swap"
+          rel="stylesheet">
+
+
+    <!-- ========================= -->
+    <!-- Font Awesome -->
+    <!-- ========================= -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <!-- ========================= -->
+    <!-- CSS -->
+    <!-- ========================= -->
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/animations.css') }}">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/responsive.css') }}">
+
+</head>
+
+<body>
+
+
+<!-- ======================================== -->
+<!-- LOADER -->
+<!-- ======================================== -->
+
+<div id="loader">
+
+    <div class="loader-content">
+
+        <div class="loader-star">
+            ✨
+        </div>
+
+        <h1>
+            Project Starlight
+        </h1>
+
+        <p>
+            Preparing your magical surprise...
+        </p>
+
+        <div class="loading-bar">
+
+            <div class="loading-progress">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ======================================== -->
+<!-- Floating Stars -->
+<!-- ======================================== -->
+
+<div id="stars"></div>
+
+<div id="twinkling"></div>
+
+<div id="shooting-stars"></div>
+
+
+<!-- ======================================== -->
+<!-- Scroll Progress -->
+<!-- ======================================== -->
+
+<div id="scroll-progress"></div>
+
+
+<!-- ======================================== -->
+<!-- Back To Top -->
+<!-- ======================================== -->
+
+<button id="backToTop">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
+<!-- ======================================== -->
+<!-- Navigation -->
+<!-- ======================================== -->
+
+<nav>
+
+    <div class="logo">
+
+        ✨ Project Starlight
+
+    </div>
+
+
+    <ul id="menu">
+
+        <li>
+
+            <a href="#hero">
+
+                Home
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="#letter">
+
+                Letter
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="#memories">
+
+                Memories
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="#gallery">
+
+                Gallery
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="#cake">
+
+                Cake
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="#wishes">
+
+                Wishes
+
+            </a>
+
+        </li>
+
+    </ul>
+
+
+    <button id="menuBtn">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+</nav>
+
+
+<!-- ======================================== -->
+<!-- HERO SECTION -->
+<!-- ======================================== -->
+
+<section id="hero">
+
+    <div class="hero-content">
+
+        <span class="welcome">
+
+            ✨ Welcome To
+
+        </span>
+
+        <h1>
+
+            Happy Birthday
+
+        </h1>
+
+        <h2>
+
+            My Beautiful Star 🌙
+
+        </h2>
+
+        <p>
+
+            Today is not just another day.
+
+            Today is the celebration of the most wonderful person in my universe.
+
+        </p>
+
+        <a href="#letter"
+           class="hero-btn">
+
+            Begin The Journey
+
+            <i class="fa-solid fa-arrow-down"></i>
+
+        </a>
+
+    </div>
+
+    <div class="hero-glow"></div>
+
+</section><!-- ======================================== -->
+<!-- ABOUT SECTION -->
+<!-- ======================================== -->
+
+<section id="about">
+
+    <div class="section-title">
+
+        <span>✨ A Special Day</span>
+
+        <h2>Every Star Has A Story</h2>
+
+        <p>
+            Some people simply pass through our lives,
+            while others make every moment brighter.
+            Today is a celebration of one of those rare souls.
+        </p>
+
+    </div>
+
+    <div class="about-container">
+
+        <div class="about-card">
+
+            <div class="about-icon">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <h3>Filled With Love</h3>
+
+            <p>
+                Every part of this website has been created
+                with care, love, and appreciation.
+            </p>
+
+        </div>
+
+        <div class="about-card">
+
+            <div class="about-icon">
+                <i class="fa-solid fa-star"></i>
+            </div>
+
+            <h3>Magical Memories</h3>
+
+            <p>
+                Every memory deserves to shine like the stars
+                in the night sky.
+            </p>
+
+        </div>
+
+        <div class="about-card">
+
+            <div class="about-icon">
+                <i class="fa-solid fa-gift"></i>
+            </div>
+
+            <h3>A Small Surprise</h3>
+
+            <p>
+                Keep scrolling to discover everything prepared
+                especially for you.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================== -->
+<!-- LETTER SECTION -->
+<!-- ======================================== -->
+
+<section id="letter">
+
+    <div class="section-title">
+
+        <span>💌 Birthday Letter</span>
+
+        <h2>An Open Letter</h2>
+
+        <p>
+            Click the envelope to read the message.
+        </p>
+
+    </div>
+
+    <div class="letter-wrapper">
+
+        <div id="envelope">
+
+            <div class="envelope-front">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <h3>Open Me</h3>
+
+            </div>
+
+        </div>
+
+
+        <div id="letter-paper">
+
+            <div class="paper-header">
+
+                <h2>Dear ________,</h2>
+
+            </div>
+
+            <div class="paper-body">
+
+                <p>
+
+                    Happy Birthday!
+
+                </p>
+
+                <p>
+
+                    I hope today fills your heart
+                    with happiness,
+                    your face with smiles,
+                    and your life with countless
+                    beautiful memories.
+
+                </p>
+
+                <p>
+
+                    May every dream you chase
+                    become reality,
+                    every challenge become strength,
+                    and every tomorrow become brighter
+                    than today.
+
+                </p>
+
+                <p>
+
+                    Never stop believing in yourself.
+
+                    You are stronger,
+                    kinder,
+                    and more amazing
+                    than you realize.
+
+                </p>
+
+                <p>
+
+                    Thank you for being such
+                    a wonderful person.
+
+                </p>
+
+                <p class="signature">
+
+                    With Love ❤️
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================== -->
+<!-- FLOATING DECORATIONS -->
+<!-- ======================================== -->
+
+<div class="floating-decoration star1"></div>
+<div class="floating-decoration star2"></div>
+<div class="floating-decoration star3"></div>
+
+<div class="floating-heart heart1">
+    ❤️
+</div>
+
+<div class="floating-heart heart2">
+    💖
+</div>
+
+<div class="floating-heart heart3">
+    💕
+</div>
+
+<div class="floating-heart heart4">
+    💗
+</div>
+<!-- ======================================== -->
+<!-- MEMORIES SECTION -->
+<!-- ======================================== -->
+
+<section id="memories">
+
+    <div class="section-title">
+
+        <span>📖 Our Journey</span>
+
+        <h2>Beautiful Memories</h2>
+
+        <p>
+            Every picture tells a story, and every story deserves
+            to be remembered forever.
+        </p>
+
+    </div>
+
+    <div class="timeline">
+
+        <!-- Memory 1 -->
+
+        <div class="memory-card">
+
+            <div class="memory-image">
+
+                <img src="{{ url_for('static', filename='images/memory1.jpg') }}"
+                     alt="Memory 1">
+
+            </div>
+
+            <div class="memory-content">
+
+                <span class="memory-date">
+                    📅 January 2024
+                </span>
+
+                <h3>Our First Memory</h3>
+
+                <p>
+
+                    This was the beginning of a wonderful journey
+                    filled with laughter and unforgettable moments.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Memory 2 -->
+
+        <div class="memory-card">
+
+            <div class="memory-image">
+
+                <img src="{{ url_for('static', filename='images/memory2.jpg') }}"
+                     alt="Memory 2">
+
+            </div>
+
+            <div class="memory-content">
+
+                <span class="memory-date">
+                    📅 April 2024
+                </span>
+
+                <h3>A Happy Day</h3>
+
+                <p>
+
+                    Smiles, happiness, and wonderful conversations
+                    that made the day unforgettable.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Memory 3 -->
+
+        <div class="memory-card">
+
+            <div class="memory-image">
+
+                <img src="{{ url_for('static', filename='images/memory3.jpg') }}"
+                     alt="Memory 3">
+
+            </div>
+
+            <div class="memory-content">
+
+                <span class="memory-date">
+                    📅 July 2024
+                </span>
+
+                <h3>Special Moments</h3>
+
+                <p>
+
+                    Every little memory became another beautiful
+                    chapter in our story.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================== -->
+<!-- PHOTO GALLERY -->
+<!-- ======================================== -->
+
+<section id="gallery">
+
+    <div class="section-title">
+
+        <span>📸 Gallery</span>
+
+        <h2>Favorite Pictures</h2>
+
+        <p>
+
+            Click any photo to view it in full screen.
+
+        </p>
+
+    </div>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+
+            <img src="{{ url_for('static', filename='images/memory1.jpg') }}"
+                 alt="Gallery 1">
+
+        </div>
+
+        <div class="gallery-item">
+
+            <img src="{{ url_for('static', filename='images/memory2.jpg') }}"
+                 alt="Gallery 2">
+
+        </div>
+
+        <div class="gallery-item">
+
+            <img src="{{ url_for('static', filename='images/memory3.jpg') }}"
+                 alt="Gallery 3">
+
+        </div>
+
+        <div class="gallery-item">
+
+            <img src="{{ url_for('static', filename='images/memory4.jpg') }}"
+                 alt="Gallery 4">
+
+        </div>
+
+        <div class="gallery-item">
+
+            <img src="{{ url_for('static', filename='images/memory5.jpg') }}"
+                 alt="Gallery 5">
+
+        </div>
+
+        <div class="gallery-item">
+
+            <img src="{{ url_for('static', filename='images/memory6.jpg') }}"
+                 alt="Gallery 6">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================== -->
+<!-- IMAGE LIGHTBOX -->
+<!-- ======================================== -->
+
+<div id="lightbox">
+
+    <span id="closeLightbox">
+
+        &times;
+
+    </span>
+
+    <img id="lightboxImage"
+         src=""
+         alt="Full Image">
+
+</div>
+<!-- ======================================== -->
+<!-- MUSIC PLAYER -->
+<!-- ======================================== -->
+
+<section id="music">
+
+    <div class="section-title">
+
+        <span>🎵 Music</span>
+
+        <h2>Play Our Favorite Song</h2>
+
+        <p>
+            Tap the button below and enjoy the music while exploring.
+        </p>
+
+    </div>
+
+    <div class="music-player">
+
+        <div class="album">
+
+            <img src="{{ url_for('static', filename='images/album.jpg') }}"
+                 alt="Album Cover">
+
+        </div>
+
+        <div class="music-info">
+
+            <h3>Birthday Song</h3>
+
+            <p>Forever With You</p>
+
+        </div>
+
+        <audio id="birthdayMusic">
+
+            <source src="{{ url_for('static', filename='music/birthday.mp3') }}"
+                    type="audio/mpeg">
+
+        </audio>
+
+        <div class="music-controls">
+
+            <button id="playBtn">
+
+                <i class="fa-solid fa-play"></i>
+
+            </button>
+
+            <button id="pauseBtn">
+
+                <i class="fa-solid fa-pause"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================== -->
+<!-- BIRTHDAY CAKE -->
+<!-- ======================================== -->
+
+<section id="cake">
+
+    <div class="section-title">
+
+        <span>🎂 Birthday Cake</span>
+
+        <h2>Make A Birthday Wish</h2>
+
+        <p>
+            Click the candle to blow it out.
+        </p>
+
+    </div>
+
+    <div class="cake-container">
+
+        <div class="cake">
+
+            <div class="candle">
+
+                <div id="flame"></div>
+
+            </div>
+
+            <div class="cake-top"></div>
+
+            <div class="cake-middle"></div>
+
+            <div class="cake-bottom"></div>
+
+        </div>
+
+        <button id="blowCandle">
+
+            Blow Candle 🕯️
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================== -->
+<!-- GIFT BOX -->
+<!-- ======================================== -->
+
+<section id="gift">
+
+    <div class="section-title">
+
+        <span>🎁 Surprise</span>
+
+        <h2>Open Your Gift</h2>
+
+        <p>
+            Something special is waiting inside.
+        </p>
+
+    </div>
+
+    <div id="giftBox">
+
+        <div class="gift-lid"></div>
+
+        <div class="gift-body"></div>
+
+        <div class="gift-ribbon"></div>
+
+    </div>
+
+    <div id="giftMessage">
+
+        <h2>🎉 Surprise! 🎉</h2>
+
+        <p>
+
+            Wishing you endless happiness,
+            success,
+            laughter,
+            and beautiful memories.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================== -->
+<!-- WISH WALL -->
+<!-- ======================================== -->
+
+<section id="wishes">
+
+    <div class="section-title">
+
+        <span>💖 Wishes</span>
+
+        <h2>Birthday Wishes</h2>
+
+    </div>
+
+    <div class="wish-grid">
+
+        <div class="wish-card">
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h3>Happiness</h3>
+
+            <p>
+
+                May every day begin with happiness
+                and end with beautiful memories.
+
+            </p>
+
+        </div>
+
+        <div class="wish-card">
+
+            <i class="fa-solid fa-star"></i>
+
+            <h3>Success</h3>
+
+            <p>
+
+                May every dream become reality
+                and every goal be achieved.
+
+            </p>
+
+        </div>
+
+        <div class="wish-card">
+
+            <i class="fa-solid fa-sun"></i>
+
+            <h3>Bright Future</h3>
+
+            <p>
+
+                May your future always shine
+                brighter than the stars.
+
+            </p>
+
+        </div>
+
+        <div class="wish-card">
+
+            <i class="fa-solid fa-gift"></i>
+
+            <h3>Love</h3>
+
+            <p>
+
+                May your life always be filled
+                with kindness,
+                love,
+                and unforgettable moments.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================== -->
+<!-- FLOATING BALLOONS -->
+<!-- ======================================== -->
+
+<div class="balloon balloon1">🎈</div>
+<div class="balloon balloon2">🎈</div>
+<div class="balloon balloon3">🎈</div>
+<div class="balloon balloon4">🎈</div>
+
+<!-- ======================================== -->
+<!-- CONFETTI CONTAINER -->
+<!-- ======================================== -->
+
+<div id="confetti-container"></div>
+<!-- ======================================== -->
+<!-- FIREWORKS -->
+<!-- ======================================== -->
+
+<section id="celebration">
+
+    <canvas id="fireworksCanvas"></canvas>
+
+    <div class="celebration-content">
+
+        <h2>🎆 Happy Birthday 🎆</h2>
+
+        <p>
+
+            May this new chapter of your life be filled
+            with love, happiness, success, peace,
+            and countless unforgettable memories.
+
+        </p>
+
+        <button id="fireworksBtn">
+
+            Celebrate 🎉
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================== -->
+<!-- FINAL MESSAGE -->
+<!-- ======================================== -->
+
+<section id="final-message">
+
+    <div class="message-box">
+
+        <h2>
+
+            Thank You ❤️
+
+        </h2>
+
+        <p>
+
+            Thank you for taking this little journey.
+
+            Every section of this website was created
+            with love and care.
+
+        </p>
+
+        <p>
+
+            I hope today becomes one of the happiest
+            memories of your life.
+
+        </p>
+
+        <h3>
+
+            ✨ Happy Birthday Once Again ✨
+
+        </h3>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================== -->
+<!-- FOOTER -->
+<!-- ======================================== -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <h2>
+
+            Project Starlight
+
+        </h2>
+
+        <p>
+
+            Made with ❤️ using Flask, HTML, CSS & JavaScript.
+
+        </p>
+
+        <div class="footer-icons">
+
+            <a href="#hero">
+
+                <i class="fa-solid fa-house"></i>
+
+            </a>
+
+            <a href="#gallery">
+
+                <i class="fa-solid fa-image"></i>
+
+            </a>
+
+            <a href="#music">
+
+                <i class="fa-solid fa-music"></i>
+
+            </a>
+
+            <a href="#cake">
+
+                <i class="fa-solid fa-cake-candles"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- ======================================== -->
+<!-- MOBILE MENU -->
+<!-- ======================================== -->
+
+<div id="mobileMenu">
+
+    <a href="#hero">Home</a>
+
+    <a href="#letter">Letter</a>
+
+    <a href="#memories">Memories</a>
+
+    <a href="#gallery">Gallery</a>
+
+    <a href="#music">Music</a>
+
+    <a href="#cake">Cake</a>
+
+    <a href="#wishes">Wishes</a>
+
+</div>
+
+
+
+<!-- ======================================== -->
+<!-- JAVASCRIPT -->
+<!-- ======================================== -->
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+<script src="{{ url_for('static', filename='js/music.js') }}"></script>
+
+<script src="{{ url_for('static', filename='js/particles.js') }}"></script>
+
+</body>
+
+</html>
