@@ -201,11 +201,14 @@ beginJourney.addEventListener("click", () => {
     about.classList.add("show");
 
     about.scrollIntoView({
-        behavior: "smooth"
+
+        behavior: "smooth",
+
+        block: "start"
+
     });
 
 });
-
 /*===========================================================
     LETTER
 ===========================================================*/
