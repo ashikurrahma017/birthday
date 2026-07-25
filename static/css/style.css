@@ -2652,6 +2652,28 @@ footer{
 
 }
 
+.story-next{
+
+    text-align:center;
+
+    margin-top:70px;
+
+}
+
+#readLetterBtn{
+
+    display:none;
+
+}
+
+#readLetterBtn.show{
+
+    display:inline-flex;
+
+    animation:fadeUp .8s ease;
+
+}
+
 /* ===========================================================
    END OF STYLE.CSS
 =========================================================== */
