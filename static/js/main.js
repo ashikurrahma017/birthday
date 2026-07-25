@@ -42,6 +42,8 @@ const giftBox = document.getElementById("giftBox");
 
 const giftMessage = document.getElementById("giftMessage");
 
+const beginJourney = document.getElementById("beginJourney");
+
 const revealItems = document.querySelectorAll(
 
 ".about-card,.memory-card,.gallery-item,.wish-card,.message-box"
@@ -188,7 +190,21 @@ backToTop.addEventListener("click",()=>{
 
 });
 
+/*===========================================================
+    BEGIN JOURNEY
+===========================================================*/
 
+beginJourney.addEventListener("click", () => {
+
+    const about = document.getElementById("about");
+
+    about.classList.add("show");
+
+    about.scrollIntoView({
+        behavior: "smooth"
+    });
+
+});
 
 /*===========================================================
     LETTER
