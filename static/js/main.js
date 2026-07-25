@@ -259,7 +259,150 @@ function closeGallery(){
     CANDLE
 ===========================================================*/
 
+/*===========================================================
+    CINEMATIC CANDLE EXPERIENCE
+===========================================================*/
+
 let candleBlown = false;
+
+const birthdayMusic = document.getElementById("birthdayMusic");
+
+blowBtn.addEventListener("click", () => {
+
+    if (candleBlown) return;
+
+    candleBlown = true;
+
+    blowBtn.disabled = true;
+
+    blowBtn.innerHTML = "🌬️ Blowing...";
+
+    /* Flicker */
+
+    flame.classList.add("flicker");
+
+    setTimeout(() => {
+
+        flame.classList.remove("flicker");
+
+        flame.classList.add("off");
+
+        createSmoke();
+
+        createConfetti(120);
+
+        document.body.classList.add("wish-mode");
+
+        if (birthdayMusic) {
+
+            birthdayMusic.volume = 0.3;
+
+        }
+
+        if (typeof launchFireworks === "function") {
+
+            setTimeout(() => {
+
+                launchFireworks();
+
+            },1000);
+
+        }
+
+        showWishMessage();
+
+    },500);
+
+});
+/*===========================================================
+    SMOKE EFFECT
+===========================================================*/
+
+function createSmoke(){
+
+    const cake=document.querySelector(".cake");
+
+    for(let i=0;i<3;i++){
+
+        const smoke=document.createElement("div");
+
+        smoke.className="smoke";
+
+        smoke.style.left=(48+i*8)+"%";
+
+        smoke.style.animationDelay=(i*0.3)+"s";
+
+        cake.appendChild(smoke);
+
+        setTimeout(()=>{
+
+            smoke.remove();
+
+        },3500);
+
+    }
+
+}
+
+
+
+/*===========================================================
+    WISH MESSAGE
+===========================================================*/
+
+function showWishMessage(){
+
+    const box=document.createElement("div");
+
+    box.className="wish-popup";
+
+    box.innerHTML=`
+
+        <h2>✨ Make A Wish ✨</h2>
+
+        <p>
+
+            Close your eyes...
+
+            Make a wish...
+
+        </p>
+
+    `;
+
+    document.body.appendChild(box);
+
+    setTimeout(()=>{
+
+        box.classList.add("show");
+
+    },100);
+
+    setTimeout(()=>{
+
+        box.classList.remove("show");
+
+    },3500);
+
+    setTimeout(()=>{
+
+        box.remove();
+
+        document.body.classList.remove("wish-mode");
+
+        if(birthdayMusic){
+
+            birthdayMusic.volume=1;
+
+        }
+
+        blowBtn.innerHTML="✨ Wish Made ✨";
+
+        blowBtn.classList.add("wish-complete");
+
+    },4500);
+
+}
 
 blowBtn.addEventListener("click", () => {
 
