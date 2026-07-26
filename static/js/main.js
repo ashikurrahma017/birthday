@@ -315,7 +315,21 @@ nextAfterMemories.addEventListener("click",()=>{
     },1500);
 
 });
+nextAfterGallery.addEventListener("click",()=>{
 
+    const music=document.getElementById("music");
+
+    music.classList.add("show");
+
+    music.scrollIntoView({
+
+        behavior:"smooth",
+
+        block:"start"
+
+    });
+
+});
 /*===========================================================
     LIGHTBOX
 ===========================================================*/
