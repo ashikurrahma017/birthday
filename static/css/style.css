@@ -2686,6 +2686,18 @@ footer{
     animation:fadeUp .8s ease;
 
 }
+#nextAfterMemories{
+
+    display:none;
+
+}
+
+#nextAfterMemories.show{
+
+    display:inline-flex;
+
+}
+
 /* ===========================================================
    END OF STYLE.CSS
 =========================================================== */
