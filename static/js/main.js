@@ -52,6 +52,9 @@ document.getElementById("nextAfterMemories");
 const nextAfterGallery =
 document.getElementById("nextAfterGallery");
 
+const nextAfterCake =
+document.getElementById("nextAfterCake");
+
 const beginJourney = document.getElementById("beginJourney");
 
 const revealItems = document.querySelectorAll(
@@ -510,24 +513,41 @@ function showWishMessage(){
 
     },3500);
 
-    setTimeout(()=>{
+ setTimeout(()=>{
 
-        box.remove();
+    box.remove();
 
-        document.body.classList.remove("wish-mode");
+    document.body.classList.remove("wish-mode");
 
-        if(birthdayMusic){
+    if(birthdayMusic){
 
-            birthdayMusic.volume=1;
+        birthdayMusic.volume=1;
 
-        }
+    }
 
-        blowBtn.innerHTML="✨ Wish Made ✨";
+    blowBtn.innerHTML="✨ Wish Made ✨";
 
-        blowBtn.classList.add("wish-complete");
+    blowBtn.classList.add("wish-complete");
 
-    },4500);
+    // Show the next button
+    nextAfterCake.classList.add("show");
 
+},4500);
+   nextAfterCake.addEventListener("click",()=>{
+
+    const gift=document.getElementById("gift");
+
+    gift.classList.add("show");
+
+    gift.scrollIntoView({
+
+        behavior:"smooth",
+
+        block:"start"
+
+    });
+
+}); 
 }
 
 blowBtn.addEventListener("click", () => {
