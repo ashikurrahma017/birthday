@@ -316,10 +316,12 @@ nextAfterMemories.addEventListener("click",()=>{
     },1500);
 
 });
-nextAfterGallery.addEventListener("click",()=>{
+nextAfterGallery.addEventListener("click", () => {
 
     const music = document.getElementById("music");
     music.classList.add("show");
+
+    const birthdayMusic = document.getElementById("birthdayMusic");
 
     setTimeout(() => {
 
@@ -327,22 +329,15 @@ nextAfterGallery.addEventListener("click",()=>{
         cake.classList.add("show");
 
         cake.scrollIntoView({
-            behavior:"smooth",
-            block:"start"
+            behavior: "smooth",
+            block: "start"
         });
 
+        if (birthdayMusic && birthdayMusic.paused) {
+            birthdayMusic.play().catch(err => console.log(err));
+        }
+
     }, 300);
-
-});
-
-    // Start the birthday song
-    const birthdayMusic = document.getElementById("birthdayMusic");
-
-    if (birthdayMusic.paused) {
-
-        birthdayMusic.play().catch(err => console.log(err));
-
-    }
 
 });
 /*===========================================================
