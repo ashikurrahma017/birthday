@@ -38,10 +38,6 @@ const flame = document.getElementById("flame");
 
 const blowBtn = document.getElementById("blowCandle");
 
-const giftBox = document.getElementById("giftBox");
-
-const giftMessage = document.getElementById("giftMessage");
-
 const readLetterBtn = document.getElementById("readLetterBtn");
 
 const nextAfterLetter = document.getElementById("nextAfterLetter");
