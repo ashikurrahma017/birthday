@@ -2709,7 +2709,17 @@ footer{
     display:inline-flex;
 
 }
+#nextAfterCake{
 
+    display:none;
+
+}
+
+#nextAfterCake.show{
+
+    display:inline-flex;
+
+}
 
 /* ===========================================================
    END OF STYLE.CSS
