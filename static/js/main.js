@@ -526,7 +526,7 @@ function showWishMessage(){
     blowBtn.classList.add("wish-complete");
 
     // Show the next button
-    nextAfterCake.classList.add("show");
+   nextAfterCake.style.display = "inline-flex";
 
 },4500);
    nextAfterCake.addEventListener("click",()=>{
