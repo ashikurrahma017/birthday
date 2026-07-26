@@ -556,33 +556,51 @@ function showWishMessage(){
     GIFT BOX
 ===========================================================*/
 
-let giftOpened = false;
+const giftBox=document.getElementById("giftBox");
 
-giftMessage.style.display = "none";
+const lid=document.querySelector(".gift-lid");
 
-giftBox.addEventListener("click", () => {
+const giftCards=document.querySelectorAll(".gift-card");
 
-    if (giftOpened) return;
+const giftMessage=document.getElementById("giftMessage");
 
-    giftOpened = true;
+giftBox.addEventListener("click",()=>{
 
-    giftBox.classList.add("gift-open");
+giftBox.classList.add("shake");
 
-    setTimeout(() => {
+setTimeout(()=>{
 
-        giftMessage.style.display = "block";
+giftBox.classList.add("glow");
 
-        giftMessage.classList.add("fade-up");
+},600);
 
-        giftMessage.scrollIntoView({
+setTimeout(()=>{
 
-            behavior: "smooth",
+lid.classList.add("open");
 
-            block: "center"
+createMagic();
 
-        });
+},1200);
 
-    }, 700);
+setTimeout(()=>{
+
+giftCards.forEach((card,index)=>{
+
+setTimeout(()=>{
+
+card.classList.add("show");
+
+},index*350);
+
+});
+
+},1700);
+
+setTimeout(()=>{
+
+giftMessage.classList.add("show");
+
+},3400);
 
 });
 
