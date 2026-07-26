@@ -552,13 +552,13 @@ function showWishMessage(){
     GIFT BOX
 ===========================================================*/
 
-const giftBox=document.getElementById("giftBox");
+//const giftBox=document.getElementById("giftBox");
 
 const lid=document.querySelector(".gift-lid");
 
 const giftCards=document.querySelectorAll(".gift-card");
 
-const giftMessage=document.getElementById("giftMessage");
+//const giftMessage=document.getElementById("giftMessage");
 
 giftBox.addEventListener("click",()=>{
 
@@ -574,7 +574,7 @@ setTimeout(()=>{
 
 lid.classList.add("open");
 
-createMagic();
+//createMagic();
 
 },1200);
 
