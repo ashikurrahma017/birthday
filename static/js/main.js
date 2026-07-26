@@ -46,6 +46,9 @@ const readLetterBtn = document.getElementById("readLetterBtn");
 
 const nextAfterLetter = document.getElementById("nextAfterLetter");
 
+const nextAfterMemories =
+document.getElementById("nextAfterMemories");
+
 const beginJourney = document.getElementById("beginJourney");
 
 const revealItems = document.querySelectorAll(
@@ -281,7 +284,19 @@ nextAfterLetter.addEventListener("click",()=>{
 
 });
 
+nextAfterMemories.addEventListener("click",()=>{
 
+    const gallery=document.getElementById("gallery");
+
+    gallery.classList.add("show");
+
+    gallery.scrollIntoView({
+
+        behavior:"smooth"
+
+    });
+
+});
 
 /*===========================================================
     LIGHTBOX
