@@ -282,6 +282,13 @@ nextAfterLetter.addEventListener("click",()=>{
 
     });
 
+    // Show the button after reaching Memories
+    setTimeout(()=>{
+
+        nextAfterMemories.classList.add("show");
+
+    },1500);
+
 });
 
 nextAfterMemories.addEventListener("click",()=>{
