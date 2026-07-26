@@ -2720,6 +2720,13 @@ footer{
     display:inline-flex;
 
 }
+#nextAfterGift{
+    display:none;
+}
+
+#nextAfterGift.show{
+    display:inline-flex;
+}
 
 /*==============================
 PREMIUM GIFT
