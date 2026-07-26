@@ -257,6 +257,28 @@ envelope.addEventListener("click",()=>{
 
     });
 
+    // Show the next button after the letter opens
+    setTimeout(()=>{
+
+        nextAfterLetter.classList.add("show");
+
+    },2000);
+
+});
+nextAfterLetter.addEventListener("click",()=>{
+
+    const memories=document.getElementById("memories");
+
+    memories.classList.add("show");
+
+    memories.scrollIntoView({
+
+        behavior:"smooth",
+
+        block:"start"
+
+    });
+
 });
 
 
