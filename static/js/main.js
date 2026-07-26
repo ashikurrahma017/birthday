@@ -49,6 +49,9 @@ const nextAfterLetter = document.getElementById("nextAfterLetter");
 const nextAfterMemories =
 document.getElementById("nextAfterMemories");
 
+const nextAfterGallery =
+document.getElementById("nextAfterGallery");
+
 const beginJourney = document.getElementById("beginJourney");
 
 const revealItems = document.querySelectorAll(
@@ -299,9 +302,17 @@ nextAfterMemories.addEventListener("click",()=>{
 
     gallery.scrollIntoView({
 
-        behavior:"smooth"
+        behavior:"smooth",
+
+        block:"start"
 
     });
+
+    setTimeout(()=>{
+
+        nextAfterGallery.classList.add("show");
+
+    },1500);
 
 });
 
