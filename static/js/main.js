@@ -38,6 +38,8 @@ const flame = document.getElementById("flame");
 
 const blowBtn = document.getElementById("blowCandle");
 
+const confettiContainer = document.getElementById("confetti-container");
+
 const readLetterBtn = document.getElementById("readLetterBtn");
 
 const nextAfterLetter = document.getElementById("nextAfterLetter");
@@ -678,7 +680,7 @@ if (fireworksBtn) {
     CONFETTI
 ===========================================================*/
 
-const confettiContainer = document.getElementById("confetti-container");
+
 
 function createConfetti(total = 100) {
 
