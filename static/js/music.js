@@ -104,6 +104,16 @@ audio.addEventListener("ended",()=>{
 
     pauseBtn.style.display="none";
 
+    progress.style.width="100%";
+
+    timeDisplay.innerHTML =
+        formatTime(audio.duration)
+        + " / " +
+        formatTime(audio.duration);
+
+    // Reset to the beginning so she can replay it later
+    audio.currentTime = 0;
+
 });
 /*===========================================================
     CREATE PROGRESS BAR
@@ -345,7 +355,7 @@ album.addEventListener("dblclick",()=>{
     LOOP
 ===========================================================*/
 
-audio.loop=true;
+audio.loop=false;
 
 
 
