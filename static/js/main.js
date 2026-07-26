@@ -329,6 +329,15 @@ nextAfterGallery.addEventListener("click",()=>{
 
     });
 
+    // Play the birthday song automatically
+    const birthdayMusic = document.getElementById("birthdayMusic");
+
+    if (birthdayMusic.paused) {
+
+        birthdayMusic.play().catch(err => console.log(err));
+
+    }
+
 });
 /*===========================================================
     LIGHTBOX
