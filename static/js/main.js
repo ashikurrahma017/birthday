@@ -44,6 +44,8 @@ const giftMessage = document.getElementById("giftMessage");
 
 const readLetterBtn = document.getElementById("readLetterBtn");
 
+const nextAfterLetter = document.getElementById("nextAfterLetter");
+
 const beginJourney = document.getElementById("beginJourney");
 
 const revealItems = document.querySelectorAll(
