@@ -550,20 +550,6 @@ function showWishMessage(){
 }); 
 }
 
-blowBtn.addEventListener("click", () => {
-
-    if (candleBlown) return;
-
-    candleBlown = true;
-
-    flame.classList.add("off");
-
-    blowBtn.innerHTML = "✨ Wish Made ✨";
-
-    createConfetti(120);
-
-});
-
 
 
 /*===========================================================
