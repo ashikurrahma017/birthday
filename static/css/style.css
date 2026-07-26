@@ -2673,7 +2673,19 @@ footer{
     animation:fadeUp .8s ease;
 
 }
+#nextAfterLetter{
 
+    display:none;
+
+}
+
+#nextAfterLetter.show{
+
+    display:inline-flex;
+
+    animation:fadeUp .8s ease;
+
+}
 /* ===========================================================
    END OF STYLE.CSS
 =========================================================== */
