@@ -318,22 +318,22 @@ nextAfterMemories.addEventListener("click",()=>{
 });
 nextAfterGallery.addEventListener("click",()=>{
 
-    // Show Music section
     const music = document.getElementById("music");
     music.classList.add("show");
 
-    // Show Cake section immediately after
-    const cake = document.getElementById("cake");
-    cake.classList.add("show");
+    setTimeout(() => {
 
-    // Scroll directly to Cake
-    cake.scrollIntoView({
+        const cake = document.getElementById("cake");
+        cake.classList.add("show");
 
-        behavior:"smooth",
+        cake.scrollIntoView({
+            behavior:"smooth",
+            block:"start"
+        });
 
-        block:"start"
+    }, 300);
 
-    });
+});
 
     // Start the birthday song
     const birthdayMusic = document.getElementById("birthdayMusic");
