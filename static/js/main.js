@@ -53,6 +53,9 @@ document.getElementById("nextAfterGallery");
 const nextAfterCake =
 document.getElementById("nextAfterCake");
 
+const nextAfterGift =
+document.getElementById("nextAfterGift");
+
 const beginJourney = document.getElementById("beginJourney");
 
 const revealItems = document.querySelectorAll(
@@ -576,12 +579,34 @@ if (giftBox) {
         }, 1700);
 
         setTimeout(() => {
-            if (giftMessage) {
-                giftMessage.classList.add("show");
-            }
-        }, 3400);
+
+    if (giftMessage) {
+        giftMessage.classList.add("show");
+    }
+
+    if (nextAfterGift) {
+        nextAfterGift.classList.add("show");
+    }
+
+}, 3400);
 
     });
+}
+if (nextAfterGift) {
+
+    nextAfterGift.addEventListener("click", () => {
+
+        const wishes = document.getElementById("wishes");
+
+        wishes.classList.add("show");
+
+        wishes.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+
+    });
+
 }
 /*===========================================================
     SCROLL REVEAL
