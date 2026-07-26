@@ -552,56 +552,40 @@ function showWishMessage(){
     GIFT BOX
 ===========================================================*/
 
-//const giftBox=document.getElementById("giftBox");
+const giftBox = document.getElementById("giftBox");
+const giftMessage = document.getElementById("giftMessage");
+const lid = document.querySelector(".gift-lid");
+const giftCards = document.querySelectorAll(".gift-card");
 
-const lid=document.querySelector(".gift-lid");
+if (giftBox) {
+    giftBox.addEventListener("click", () => {
 
-const giftCards=document.querySelectorAll(".gift-card");
+        giftBox.classList.add("shake");
 
-//const giftMessage=document.getElementById("giftMessage");
+        setTimeout(() => {
+            giftBox.classList.add("glow");
+        }, 600);
 
-giftBox.addEventListener("click",()=>{
+        setTimeout(() => {
+            if (lid) lid.classList.add("open");
+        }, 1200);
 
-giftBox.classList.add("shake");
+        setTimeout(() => {
+            giftCards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.classList.add("show");
+                }, index * 350);
+            });
+        }, 1700);
 
-setTimeout(()=>{
+        setTimeout(() => {
+            if (giftMessage) {
+                giftMessage.classList.add("show");
+            }
+        }, 3400);
 
-giftBox.classList.add("glow");
-
-},600);
-
-setTimeout(()=>{
-
-lid.classList.add("open");
-
-//createMagic();
-
-},1200);
-
-setTimeout(()=>{
-
-giftCards.forEach((card,index)=>{
-
-setTimeout(()=>{
-
-card.classList.add("show");
-
-},index*350);
-
-});
-
-},1700);
-
-setTimeout(()=>{
-
-giftMessage.classList.add("show");
-
-},3400);
-
-});
-
-
-
+    });
+}
 /*===========================================================
     SCROLL REVEAL
 ===========================================================*/
