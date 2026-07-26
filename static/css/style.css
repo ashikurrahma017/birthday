@@ -2698,6 +2698,19 @@ footer{
 
 }
 
+#nextAfterGallery{
+
+    display:none;
+
+}
+
+#nextAfterGallery.show{
+
+    display:inline-flex;
+
+}
+
+
 /* ===========================================================
    END OF STYLE.CSS
 =========================================================== */
