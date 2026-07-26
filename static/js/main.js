@@ -317,11 +317,16 @@ nextAfterMemories.addEventListener("click",()=>{
 });
 nextAfterGallery.addEventListener("click",()=>{
 
-    const music=document.getElementById("music");
-
+    // Show Music section
+    const music = document.getElementById("music");
     music.classList.add("show");
 
-    music.scrollIntoView({
+    // Show Cake section immediately after
+    const cake = document.getElementById("cake");
+    cake.classList.add("show");
+
+    // Scroll directly to Cake
+    cake.scrollIntoView({
 
         behavior:"smooth",
 
@@ -329,7 +334,7 @@ nextAfterGallery.addEventListener("click",()=>{
 
     });
 
-    // Play the birthday song automatically
+    // Start the birthday song
     const birthdayMusic = document.getElementById("birthdayMusic");
 
     if (birthdayMusic.paused) {
