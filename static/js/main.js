@@ -56,6 +56,8 @@ document.getElementById("nextAfterCake");
 const nextAfterGift =
 document.getElementById("nextAfterGift");
 
+const nextAfterWishes = document.getElementById("nextAfterWishes");
+
 const beginJourney = document.getElementById("beginJourney");
 
 const revealItems = document.querySelectorAll(
@@ -596,17 +598,36 @@ if (nextAfterGift) {
 
     nextAfterGift.addEventListener("click", () => {
 
-        const wishes = document.getElementById("wishes");
+    const wishes = document.getElementById("wishes");
 
-        wishes.classList.add("show");
+    wishes.classList.add("show");
 
-        wishes.scrollIntoView({
+    wishes.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+
+    setTimeout(() => {
+        nextAfterWishes.classList.add("show");
+    }, 1000);
+
+});
+if (nextAfterWishes) {
+
+    nextAfterWishes.addEventListener("click", () => {
+
+        const celebration = document.getElementById("celebration");
+
+        celebration.classList.add("show");
+
+        celebration.scrollIntoView({
             behavior: "smooth",
             block: "start"
         });
 
     });
 
+}
 }
 /*===========================================================
     SCROLL REVEAL
